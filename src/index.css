@@ -1,0 +1,60 @@
+.fade-anim img{
+    animation: fadeAnim 0.5s ease-out;
+}
+@keyframes fadeAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+.spn{
+    @apply bg-red-500 px-2 py-2 rounded-full text-white font-bold hover:shadow-md;
+}
+.img{
+    @apply w-40 h-full object-cover p-3;
+}
+.card{
+    @apply bg-white hover:shadow-lg rounded hover:bg-gray-100 relative cursor-pointer;
+}
+.cards{
+    @apply inline-block w-full;
+}
+.imgs{
+    @apply md:w-full md:h-32  h-16 w-16 object-cover rounded-md;
+}
+.span{
+   @apply bg-red-400 rounded-md px-2 py-1 text-white text-xs md:text-lg m-2;
+}
+.imgz{
+    @apply  h-10 w-16 md:w-52 md:h-32 object-cover rounded-md hover:bg-opacity-5;
+}
+.ftimg{
+    @apply w-24 rounded-md h-24 object-cover;
+}
+.svg{
+    @apply h-10 w-10 text-gray-700 m-auto mb-5;
+}
+.svgs{
+    @apply h-7 w-8 ;
+}
+h1{
+    @apply font-medium text-sm mb-2;
+}
+.small{
+    @apply text-sm text-gray-400 space-y-2;
+}
+.textcard{
+    @apply text-center border-r-2 border-gray-200 p-2;
+}
+.footerlink{
+    @apply hover:text-orange-500 text-sm text-gray-400;
+}
+}
